@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628880506221",
+    "project_id": "recipefinder-100",
+    "storage_bucket": "recipefinder-100.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628880506221:android:05ec2acb4fe490b2822e64",
+        "android_client_info": {
+          "package_name": "com.example.recipefinder100"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0ePv_QhSqgXB4fCz5gAceBG5n3Ehd1jA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

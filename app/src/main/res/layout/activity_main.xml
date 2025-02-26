@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+
+    <!-- Список ингредиентов -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:text="Выберите ингредиенты"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="548dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <!-- Кнопка "Найти рецепты" -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="findRecipes"
+        android:text="Найти рецепты" />
+
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Кнопка 1: Главная -->
+        <ImageView
+            android:id="@+id/imageView_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_dialog_dialer" />
+
+        <!-- Кнопка 2: Поиск -->
+        <ImageView
+            android:id="@+id/imageView_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <!-- Кнопка 3: Профиль -->
+        <ImageView
+            android:id="@+id/imageView_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_myplaces" />
+    </LinearLayout>
+</LinearLayout>
